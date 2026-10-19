@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+#top,
+#categories,
+#products,
+#featured,
+#how,
+#how-it-works,
+#contact,
+#about {
+  scroll-margin-top: 85px;
+}
+
+body {
+  margin: 0;
+  background: #F6F6FB;
+  color: #12161C;
+  font-family: 'Manrope', 'Noto Sans Myanmar', system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #12161C;
+  text-decoration: none;
+}
+a:hover {
+  color: #4B3BFF;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@keyframes hero3dFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes badgeFloat1 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes badgeFloat2 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* ── Hero Phone Accessories Entrance Animation (Page Start) ── */
+@keyframes heroEntrancePop {
+  0% {
+    opacity: 0;
+    transform: translateY(70px) scale(0.8) rotate(-4deg);
+    filter: blur(8px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-12px) scale(1.03) rotate(0.8deg);
+    filter: blur(0px);
+  }
+  80% {
+    transform: translateY(3px) scale(0.99) rotate(-0.3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotate(0deg);
+    filter: blur(0px);
+  }
+}
+
+@keyframes heroGlowBurst {
+  0% {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  65% {
+    opacity: 0.95;
+    transform: scale(1.18);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+}
+
+@keyframes heroShadowSpread {
+  0% {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  65% {
+    opacity: 0.85;
+    transform: scale(1.12);
+  }
+  100% {
+    opacity: 0.65;
+    transform: scale(1);
+  }
+}
+
+@keyframes hero3dFloatLoop {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0.4deg);
+  }
+}
+
+.animate-hero-entrance {
+  animation: heroEntrancePop 1.25s cubic-bezier(0.2, 0.85, 0.25, 1) 0.35s both,
+             hero3dFloatLoop 6.5s ease-in-out 1.6s infinite;
+}
+
+.animate-glow-entrance {
+  animation: heroGlowBurst 1.35s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
+}
+
+.animate-shadow-entrance {
+  animation: heroShadowSpread 1.25s cubic-bezier(0.2, 0.85, 0.25, 1) 0.35s both;
+}
+
+/* ── Clean Modern Product Card Styles ── */
+.modern-product-card {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.28s ease;
+}
+
+.modern-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px -10px rgba(18, 22, 28, 0.12);
+  border-color: rgba(75, 59, 255, 0.22) !important;
+}
+
+.modern-product-card:hover .card-product-img {
+  transform: scale(1.04);
+}
+
+.modern-add-btn:hover {
+  background: #4B3BFF !important;
+  box-shadow: 0 4px 16px rgba(75, 59, 255, 0.35) !important;
+  transform: translateY(-1px);
+}
+
+/* ── Hero Buttons ── */
+.hero-primary-btn {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s ease,
+              filter 0.22s ease;
+}
+.hero-primary-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 16px 36px rgba(75, 59, 255, 0.45) !important;
+}
+.hero-primary-btn:active {
+  transform: translateY(0);
+}
+
+.hero-secondary-btn {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s ease,
+              background 0.22s ease,
+              border-color 0.22s ease;
+}
+.hero-secondary-btn:hover {
+  transform: translateY(-2px);
+  background: #FFFFFF !important;
+  border-color: rgba(75, 59, 255, 0.35) !important;
+  box-shadow: 0 8px 24px rgba(75, 59, 255, 0.12) !important;
+}
+.hero-secondary-btn:active {
+  transform: translateY(0);
+}
+

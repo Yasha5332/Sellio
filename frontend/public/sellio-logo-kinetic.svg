@@ -1,0 +1,33 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sellio Kinetic S Logo">
+  <defs>
+    <linearGradient id="ks-body" x1="8" y1="8" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B3BFF" />
+      <stop offset="60%" stop-color="#6C5CE7" />
+      <stop offset="100%" stop-color="#12161C" />
+    </linearGradient>
+    <linearGradient id="ks-arrow" x1="22" y1="28" x2="42" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B3BFF" />
+      <stop offset="50%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#D4F56A" />
+    </linearGradient>
+    <linearGradient id="ks-handle" x1="16" y1="4" x2="32" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D4F56A" />
+      <stop offset="100%" stop-color="#4B3BFF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Bag Handle -->
+  <path d="M19 18V13C19 8.58172 22.5817 5 27 5C31.4183 5 35 8.58172 35 13V18" stroke="url(#ks-handle)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Dynamic S & Tote Base -->
+  <path d="M38 21H16C13.2386 21 11 23.2386 11 26V28C11 30.7614 13.2386 33 16 33H35C38.3137 33 41 35.6863 41 39V41C41 44.3137 38.3137 47 35 47H13" stroke="url(#ks-body)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Kinetic Surge Arrow -->
+  <path d="M22 39L42 19M42 19H30M42 19V31" stroke="url(#ks-arrow)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Wordmark -->
+  <text x="64" y="44" fill="#12161C" font-family="'Bricolage Grotesque', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="36" font-weight="800" letter-spacing="-1.5">Sellio</text>
+
+  <!-- Pulse Dot -->
+  <circle cx="166" cy="40" r="4.5" fill="#D4F56A" stroke="#4B3BFF" stroke-width="2"/>
+</svg>
